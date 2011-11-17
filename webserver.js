@@ -9,7 +9,7 @@ var server = require('http').createServer(function(req, res) {
 })
 server.listen(8000);
 
-//Initializing now.js framework
+//Initializing NowJS
 var nowjs = require('now');
 var everyone = nowjs.initialize(server);
 
@@ -32,7 +32,6 @@ everyone.now.harvesterOn = function() {
 	  var date = new Date();
 	  //Remembering time to detect inactive team members
 	  team[member].time = date.getTime();
-
 	}
       }
       //Updating view
