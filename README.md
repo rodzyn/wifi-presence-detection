@@ -1,16 +1,16 @@
-This is example how to analyze packets using Node.js
+This is an example how to simple analyze LAN packets using Node.js
 ===
 
 ### Description
 
 I'm using node_pcap library with Node.js and NowJS for data syncing.
-It's just yet another project just for fun and to test interesting technologies
+It's just yet another project just fun and to test interesting technologies.
 
 ### Using
 
-sudo node webserver.js (yes, it requires root privileges)
+    sudo node webserver.js (yes, it requires root privileges)
 
-Edit team.js - it containg mac addresses and photos of users that you want to detect
+Edit team.js - it contains mac addresses and photos of users that you want to detect.
 
 ### Contributing
 
