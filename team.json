@@ -1,0 +1,7 @@
+var team = {
+  rodzyn: {
+    'hwaddr': '00:21:e9:dc:e9:2c',
+    'photo' : 'http://s3.amazonaws.com/assets.applicake.com/system/avatars/21/medium/IMG_6008_marcin_s.jpg?1297761170',
+    'time'  : null
+  },
+};

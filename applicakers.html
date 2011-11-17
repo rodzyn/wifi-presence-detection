@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" /> 
+  <meta name="keywords" content="" /> 
+  <meta name="description" content="Applicake is a group of open-minded and dedicated individuals all of whom speak fluent English. Our goal was to create a friendly working environment so that the development process is a pleasure, and not a struggle." />              
+  <title>World's top Ruby on Rails developers gathered at Applicake</title> 
+  <link href="http://assets.applicake.com.s3.amazonaws.com/stylesheets/all.css?1297799826" media="screen" rel="stylesheet" type="text/css" /> 
+  <!--[if IE]>                 
+    <link href="http://assets.applicake.com.s3.amazonaws.com/stylesheets/ie.css?1297799826" media="screen" rel="stylesheet" type="text/css" />
+  <![endif]--> 
+  <!--[if IE 6]>  
+    <link href="http://assets.applicake.com.s3.amazonaws.com/stylesheets/ie6.css?1297799826" media="screen" rel="stylesheet" type="text/css" />
+  <![endif]--> 
+  <style type="text/css">
+    .inactive {
+      opacity : 0.4;
+      filter: alpha(opacity=40); // msie
+      background-color: #000;
+    }
+  </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script src="/nowjs/now.js"></script>
+  <script type="text/javascript">
+    now.ready(function(){
+      var date = new Date();
+      now.updateTeam = function(team) {
+        $('.applicaker_photo').empty();
+        for (member in team) {
+          if ((((date.getTime() - team[member].time)/60000) < 15) && team[member].time !== null) {
+            $('.applicaker_photo').append('<img class="active" height="125" width="250" src="' + team[member].photo + '" />');
+          }
+          else {
+            $('.applicaker_photo').append('<img class="inactive" height="125" width="250" src="' + team[member].photo + '" />');
+          }
+        }
+      }
+      now.harvesterOn();
+    });
+  </script>
+</head> 
+<body> 
+<div id="applicakers"> 
+</div>
+<h2>Currently available:</h2>
+<div class="applicaker_photo">
+</div>
+</body>
+</html>
