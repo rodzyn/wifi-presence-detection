@@ -35,7 +35,9 @@ Breaks still? Make sure that your NODE_PATH is correct, it should be something l
 
 	export NODE_PATH=/usr/local/lib/node_modules
 
-In case of troubles with node_pcap installation (here is a tricky part). Right now, node_pcap library is not compatible with node 0.6.x
+### node_pcap troubles
+
+Right now, node_pcap library is not compatible with node 0.6.x
 But I found a minimum workaround (full compatibility pull request going to be merged soon)
 Go to your node modules:
 
